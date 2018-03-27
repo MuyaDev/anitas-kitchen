@@ -1,1 +1,31 @@
+body {
+  font-family: IBM Plex Sans Condensed-ExtraLight;
+  src.url("css/fonts/IBMPlexSansCondensed-ExtraLight.ttf");
+}
 
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.Contacts, .Events, .Menu {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .Contacts {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .Events {
+  opacity: 0;
+}
+
+.change .Menu {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}

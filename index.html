@@ -4,14 +4,66 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <limk href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116449999-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116449999-1');
+
+    </script>
+    <title>Anitas-kitchen</title>
 </head>
 
 <body>
-  <div class="container-fluidr">
-    <h1><background-image><img src="img/assets/backgrounds/landing.jpg"></background-image</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class=" col-md-12">
+        <div class="container" onclick="myFunction(this)">
+          <div class="Contacts"></div>
+          <div class="Events"></div>
+          <div class="Menu"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="logoBig">
+        <div align="center">
+          <img src="img/assets/logoBig.png" alt="logo">
+          <h1> We Provide The Best Food </h1>
+          <h2> At The <strong>Right Price</strong> </h2>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-4">
+  <div class="container-fluid">
+    <div class="panel panel-default">
+      <div class="row food">
+        <div class="col-md-3">
+
+          <div class="row" id="happyhour">
+            <p>Happy Hour</p>
+          </div>
+          <div class="row" id="partytime">
+            <p>Party Time</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h1>Breakfast</h1>
+        </div>
+        <div class="col-md-3">
+          <h1>Lunch</h1>
+        </div>
+        <div class="col-md-3">
+          <h1>Dinner</h1>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/jquery.js "></script>
